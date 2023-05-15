@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Yard To Nanometer</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Yard</label>
+            <input id="input" type="number" placeholder="Yard" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Nanometer: <span id="outputnano"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputnano").innerHTML = valNum * 914400000;
+        }
+    </script>
+
+</body></html>
